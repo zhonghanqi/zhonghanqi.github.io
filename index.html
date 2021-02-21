@@ -277,6 +277,493 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-整数类型进制简介" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a  href="/2021/02/21/%E6%95%B4%E6%95%B0%E7%B1%BB%E5%9E%8B%E8%BF%9B%E5%88%B6%E7%AE%80%E4%BB%8B/" class="article-date">
+      <time datetime="2021-02-21T13:29:44.000Z" itemprop="datePublished">2021-02-21</time>
+</a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a  class="article-title" href="/2021/02/21/%E6%95%B4%E6%95%B0%E7%B1%BB%E5%9E%8B%E8%BF%9B%E5%88%B6%E7%AE%80%E4%BB%8B/">整数类型进制简介</a>
+    </h1>
+  
+
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="整数类型"><a href="#整数类型" class="headerlink" title="整数类型"></a>整数类型</h3><p>​    整数类型：保存整数数值（范围限制），4个字节储存数据，最大就是32位：42亿多。但是在PHP中默认是有符号类型（区分正负数）。</p>
+<p>​    在PHP中提供了四种整形的定义方式：十进制定义、二进制定义、八进制定义和十六进制定义</p>
+<p>$a=120;  //10进制</p>
+<p>$a=0b110;  //2进制</p>
+<p>$a=0120;  //8进制</p>
+<p>$a=0x120;  //16进制</p>
+<p><img src="/2021/02/21/%E6%95%B4%E6%95%B0%E7%B1%BB%E5%9E%8B%E8%BF%9B%E5%88%B6%E7%AE%80%E4%BB%8B/01.png" alt="01"></p>
+<p><img src="/2021/02/21/%E6%95%B4%E6%95%B0%E7%B1%BB%E5%9E%8B%E8%BF%9B%E5%88%B6%E7%AE%80%E4%BB%8B/02.png" alt="02"></p>
+<p>​    PHP提供了很多的函数进行进制转换：</p>
+<img src="/2021/02/21/%E6%95%B4%E6%95%B0%E7%B1%BB%E5%9E%8B%E8%BF%9B%E5%88%B6%E7%AE%80%E4%BB%8B/03.png" alt="03" style="zoom:50%;">
+
+<h3 id="浮点类型"><a href="#浮点类型" class="headerlink" title="浮点类型"></a>浮点类型</h3><p>​    浮点型：小数类型以及超过整型所能存储范围的整数（不保证精度），精度范围大概在15个有效数字左右。</p>
+<p>​    浮点型定义有两种方式：</p>
+<p>$f=1.23;</p>
+<p>$f=1.23e10;  //科学计数法，其中e表示底10</p>
+<p>​    尽量不用浮点数做精确判断：浮点数保存的数据不够精确，而且在计算机中凡是小数基本上存的都不准确。</p>
+<h3 id="布尔类型"><a href="#布尔类型" class="headerlink" title="布尔类型"></a>布尔类型</h3><p>​    布尔类型：两个值true和false，通常是用于判断比较。</p>
+<p>​    在进行某些数据判断的时候，需要特别注意类型转换。</p>
+<p><img src="/2021/02/21/%E6%95%B4%E6%95%B0%E7%B1%BB%E5%9E%8B%E8%BF%9B%E5%88%B6%E7%AE%80%E4%BB%8B/04.png" alt="04"></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-数据类型分类" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a  href="/2021/02/21/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%88%86%E7%B1%BB/" class="article-date">
+      <time datetime="2021-02-21T12:57:56.000Z" itemprop="datePublished">2021-02-21</time>
+</a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a  class="article-title" href="/2021/02/21/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%88%86%E7%B1%BB/">数据类型分类</a>
+    </h1>
+  
+
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p>数据类型：data type，在PHP中指的是存储的数据本身的类型，而不是变量的类型。PHP是一种弱类型语言，变量本身没有数据类型。</p>
+<h3 id="PHP的八种数据类型"><a href="#PHP的八种数据类型" class="headerlink" title="PHP的八种数据类型"></a>PHP的八种数据类型</h3><p><img src="/2021/02/21/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%88%86%E7%B1%BB/01.png" alt="01"></p>
+<h3 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h3><p><img src="/2021/02/21/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%88%86%E7%B1%BB/02.png" alt="02"></p>
+<p>​    强制转换规则：在变量之前增加一个括号（），然后在里面写上对应类型：int/integer……其中NULL类型需用到unset（）。</p>
+<p><img src="/2021/02/21/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%88%86%E7%B1%BB/03.png" alt="03"></p>
+<p>​    其他类型转数值的说明：</p>
+<p>  1、布尔true为1，false为0；</p>
+<p>  2、字符串转数值有自己的规则；</p>
+<p>  2.1、以字母开头的字符串，永远为0；</p>
+<p>  2.2、以数字开头的字符串，取到碰到字符串为止（不会同时包含两个小数点）</p>
+<p><img src="/2021/02/21/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%88%86%E7%B1%BB/04.png" alt="04"></p>
+<h3 id="类型判断"><a href="#类型判断" class="headerlink" title="类型判断"></a>类型判断</h3><p>​    通过一组类型判断函数，来判断变量，最终返回这个变量所保存数据类型（相同结果为true，失败为false）：是一组以is_开头后面跟类型名字的函数：is_xxx（变量名）</p>
+<p>​    Bool类型不能用echo来查看，可以使用var_dump结构查看</p>
+<p>  Var_dump(变量1，变量2…)</p>
+<p><img src="/2021/02/21/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%88%86%E7%B1%BB/05.png" alt="05"></p>
+<p>​    还有一组函数可以用来获取以及设定数据（变量）的类型</p>
+<p><img src="/2021/02/21/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%88%86%E7%B1%BB/06.png" alt="06"></p>
+<p><img src="/2021/02/21/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%88%86%E7%B1%BB/07.png" alt="07"></p>
+<p><img src="/2021/02/21/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%88%86%E7%B1%BB/08.png" alt="08"></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-常量的定义和使用" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a  href="/2021/02/21/%E5%B8%B8%E9%87%8F%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E4%BD%BF%E7%94%A8/" class="article-date">
+      <time datetime="2021-02-21T12:18:53.000Z" itemprop="datePublished">2021-02-21</time>
+</a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a  class="article-title" href="/2021/02/21/%E5%B8%B8%E9%87%8F%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E4%BD%BF%E7%94%A8/">常量的定义和使用</a>
+    </h1>
+  
+
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h3><p>​    常量与变量一样，都是用来保存数据的。</p>
+<h3 id="常量基本概念"><a href="#常量基本概念" class="headerlink" title="常量基本概念"></a>常量基本概念</h3><p>​    常量：const/constant，是一种在程序运行当中，不可改变的量（数据）</p>
+<p>​    常量一旦定义，通常数据不可改变（用户级别）</p>
+<h3 id="常量定义形式"><a href="#常量定义形式" class="headerlink" title="常量定义形式"></a>常量定义形式</h3><p>​    在PHP中常量有两种定义方式（5.3之后才有两种）</p>
+<p>  1、使用定义常量的函数：define(‘常量名’,常量值);</p>
+<p>  2、5.3之后才有的：const 常量名=值;</p>
+<p><img src="/2021/02/21/%E5%B8%B8%E9%87%8F%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E4%BD%BF%E7%94%A8/01.png" alt="01"></p>
+<p>​    常量名字的命名规则：</p>
+<p>  1、常量不需要”$”符号，一旦使用系统就会认为是变量；</p>
+<p>  2、常量的名字组成由字母、数字和下划线组成，不能以数字开头；</p>
+<p>  3、常量的名字通常是以大小写字母为主（与变量以示区别）；</p>
+<p>  4、常量命名的规则比变量要松散，可以使用一些特殊字符，该方式只能使用define定义；</p>
+<p><img src="/2021/02/21/%E5%B8%B8%E9%87%8F%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E4%BD%BF%E7%94%A8/02.png" alt="02"></p>
+<p>​    注意细节：</p>
+<p>  1、define和const定义的常量是有区别的：在于访问权限区别；</p>
+<p>  2、定义常量通常不区分大小写，但是可以区分，可以参照define函数的第三个参数</p>
+<h3 id="常量使用形式"><a href="#常量使用形式" class="headerlink" title="常量使用形式"></a>常量使用形式</h3><p>​    常量的使用与变量一样：不可改变值（在定义的时候必须赋值）</p>
+<p><img src="/2021/02/21/%E5%B8%B8%E9%87%8F%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E4%BD%BF%E7%94%A8/03.png" alt="03"></p>
+<p>​    有点时候还需要使用另外一种形式来访问（针对的是特殊名字的常量），需要用到另外一个访问常量的函数：const(‘常量名’)</p>
+<p><img src="/2021/02/21/%E5%B8%B8%E9%87%8F%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E4%BD%BF%E7%94%A8/04.png" alt="04"></p>
+<p>​    说明：常量和变量的使用</p>
+<p>  1、凡是数据会可能变化的，那么肯定是用变量；</p>
+<p>  2、数据不一定会边的，可以使用常量或者变量（变量居多）；</p>
+<p>  3、数据不允许被修改的，一定用常量。</p>
+<h3 id="系统常量"><a href="#系统常量" class="headerlink" title="系统常量"></a>系统常量</h3><p>​    系统常量：系统帮助用户定义的常量，用户可以直接使用。</p>
+<p>​    常用的几个系统常量：</p>
+<p>PHP_VERSION:PHP版本号</p>
+<p>PHP_INT_SIZE:整形大小</p>
+<p>PHP_INT_MAX:整形能表示的最大值（PHP中整形是允许出现负数：带符号）</p>
+<p><img src="/2021/02/21/%E5%B8%B8%E9%87%8F%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E4%BD%BF%E7%94%A8/05.png" alt="05"></p>
+<p>​    在PHP中还有一些特殊的常量，他们有双下划线开始+常量名+双下划线结束，这种常量称之为系统魔术常量：魔术常量的值通常会跟着环境变化，但是用户改变不了</p>
+<p><img src="/2021/02/21/%E5%B8%B8%E9%87%8F%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E4%BD%BF%E7%94%A8/06.png" alt="06"></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-变量概念及使用" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a  href="/2021/02/20/%E5%8F%98%E9%87%8F%E6%A6%82%E5%BF%B5%E5%8F%8A%E4%BD%BF%E7%94%A8/" class="article-date">
+      <time datetime="2021-02-20T15:14:44.000Z" itemprop="datePublished">2021-02-20</time>
+</a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a  class="article-title" href="/2021/02/20/%E5%8F%98%E9%87%8F%E6%A6%82%E5%BF%B5%E5%8F%8A%E4%BD%BF%E7%94%A8/">变量概念及其使用</a>
+    </h1>
+  
+
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><p>​    PHP是一种动态网站开发的脚本语言，动态语言特点是交互性，会有数据的传递，而PHP作为“中间人”，需要进行数据的传递，传递的前提就是PHP能自己储存数据（临时储存）</p>
+<h3 id="变量基本概念"><a href="#变量基本概念" class="headerlink" title="变量基本概念"></a>变量基本概念</h3><p>​    变量来源于数学，是计算机语言中能<u>储存计算结果</u>或能表示值抽象概念。<u>变量可以通过变量名访问</u>。在指令式语言中，<u>变量通常是可变的</u>。</p>
+<p>​    1、变量是用来储存数据的；</p>
+<p>​    2、变量是存在名字的；</p>
+<p>​    3、变量是通过名字来访问的：数据；</p>
+<p>​    4、变量是可以改变的：数据。</p>
+<h3 id="变量的使用"><a href="#变量的使用" class="headerlink" title="变量的使用"></a>变量的使用</h3><p>​    <strong>PHP中的所有变量都必须使用”$“符号</strong></p>
+<p>​    1、定义：在系统中增加对应的变量名字（内存）</p>
+<p><code>$var1;    //定义变量</code></p>
+<p>​    2、赋值：可以将数据赋值给变量名（可以在定义的同时完成）</p>
+<p><code>$var2=1;    //定义同时赋值</code></p>
+<p>​    3、可以通过变量名访问存储的数据</p>
+<p><code>echo $var2;    //通过var2变量名字找到存储的内容1，然后输出</code></p>
+<p>​    4、可以将变量从内存中删除</p>
+<p><code>unset($var2);    //使用unset(变量名字)函数</code></p>
+<h3 id="变量命名规则"><a href="#变量命名规则" class="headerlink" title="变量命名规则"></a>变量命名规则</h3><p>​    1、在PHP中变量名字必须以”$“符号开始；</p>
+<p>​    2、名字由字母、数字和下划线”_“构成，但是不能以数字开头；</p>
+<p>​    3、在PHP中本身还允许中文变量（不建议）。</p>
+<h3 id="预定义变量"><a href="#预定义变量" class="headerlink" title="预定义变量"></a>预定义变量</h3><p>​    预定义变量：提前定义的变量，系统定义的变量，储存许多需要用到的数据（预定义变量都是数组）</p>
+<p><strong>$_GET</strong>：获取所有表单以get方式提交的数据</p>
+<p><strong>$_POST</strong>：POST提交的数据都会保存在此</p>
+<p><strong>$_REQUEST</strong>：GET和POST提交的都会保存</p>
+<p>$_GLOBALS：PHP中所有的全局变量</p>
+<p><strong>$_SERVER</strong>：服务器信息</p>
+<p><strong>$_SESSION</strong>：session会话数据</p>
+<p><strong>$_COOKIE</strong>：cookie会话数据</p>
+<p>$_ENV：环境信息</p>
+<p>$_FILES：用户上传的文件信息</p>
+<h3 id="可变变量"><a href="#可变变量" class="headerlink" title="可变变量"></a>可变变量</h3><p>​    可变变量：如果一个变量保存的值刚好是另外一个变量的名字，那么可以直接通过访问一个变量得到另外一个变量的值（在变量前面再多加一个$符号）。</p>
+<p><code>$a=&#39;b&#39;;</code></p>
+<p><code>$b=&#39;bb&#39;;</code></p>
+<p><code>$$a➡bb</code></p>
+<h3 id="变量传值"><a href="#变量传值" class="headerlink" title="变量传值"></a>变量传值</h3><p>​    将一个变量赋值给另外一个变量：变量传值</p>
+<p>​    变量传值一共有两种方式：值传递、引用传递</p>
+<p>  值传递：将变量保存的值复制一份，然后将新的值给另外一个变量保存（两个变量没有关系）</p>
+<p><img src="/2021/02/20/%E5%8F%98%E9%87%8F%E6%A6%82%E5%BF%B5%E5%8F%8A%E4%BD%BF%E7%94%A8/01.png" alt="01"></p>
+<p>  引用传递：将变量保存的值所在的内存地址，传递给另外一个变量：两个变量指向同一块内存空间（两个变量是同一个值）</p>
+<p>​    <code>$新变量=&amp;$老变量</code></p>
+<p><img src="/2021/02/20/%E5%8F%98%E9%87%8F%E6%A6%82%E5%BF%B5%E5%8F%8A%E4%BD%BF%E7%94%A8/02.png" alt="02"></p>
+<p>在内存中，通常有以下几个分区</p>
+<p>  栈区：程序可以操作的内存部分（不存数据，运行程序代码），少但是快</p>
+<p>  代码段：储存程序的内存部分（不执行）</p>
+<p>  数据段：储存普通数据（全局区和静态区）</p>
+<p>  堆区：储存复杂数据，大但是效率低</p>
+<h4 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：</h4><p><img src="/2021/02/20/%E5%8F%98%E9%87%8F%E6%A6%82%E5%BF%B5%E5%8F%8A%E4%BD%BF%E7%94%A8/03.png" alt="03"></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-PHP基础" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a  href="/2021/02/20/PHP%E5%9F%BA%E7%A1%80/" class="article-date">
+      <time datetime="2021-02-20T05:34:52.000Z" itemprop="datePublished">2021-02-20</time>
+</a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a  class="article-title" href="/2021/02/20/PHP%E5%9F%BA%E7%A1%80/">PHP基础</a>
+    </h1>
+  
+
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="PHP语法初步"><a href="#PHP语法初步" class="headerlink" title="PHP语法初步"></a>PHP语法初步</h3><p>​    PHP是一种运行在服务器端的脚本语言，可以嵌入到HTML中。</p>
+<h3 id="PHP代码标记"><a href="#PHP代码标记" class="headerlink" title="PHP代码标记"></a>PHP代码标记</h3><p>​    在PHP历史发展中，可以使用多种标记来区分PHP脚本。</p>
+<p>​    ASP标记：&lt;% php 代码 %&gt;</p>
+<p>​    短标记：&lt; ? php 代码 ?&gt;</p>
+<p>​    以上两种基本弃用，如果要使用那么需要在配置文件中开启。</p>
+<p>​    脚本标记：<script language="php">php代码</script></p>
+<p>​    标准标记（常用）：<?php php代码?></p>
+<h3 id="PHP注释"><a href="#PHP注释" class="headerlink" title="PHP注释"></a>PHP注释</h3><p>​    习惯：所有的代码在写的过程中都必须进行注释，对于初学者而言，注释就是个人学习和写代码的一个思路说明。</p>
+<p>​    PHP中注释分为两种：行注释和块注释</p>
+<p>​    行注释：一次注释一行</p>
+<p>​        //:后面跟的所有内容都是注释</p>
+<p>​        #:与//一样</p>
+<p>​    块注释：一次注释多行</p>
+<p>​        /加星号:中间直到*/出现之前，全部都是注释</p>
+<h3 id="PHP语句分隔符"><a href="#PHP语句分隔符" class="headerlink" title="PHP语句分隔符"></a>PHP语句分隔符</h3><p>​    语句分隔符：在PHP中，代码是以行为单位，系统需要通过判断行的结束，该结束通常都是一个符号：分号”;“(英文状态下的分号)。</p>
+<p>​    定义内容：</p>
+<p>​    $a=5;</p>
+<p>​    Echo ‘hello world’;</p>
+<p>​    （Parse error:解析错误；</p>
+<p>​    syntax error:语法错误）</p>
+<p>​    特殊说明：</p>
+<p>​    1、PHP中标记结束符?&gt;有自带语句结束符的效果，最后一行PHP代码可以没有语句结束符“;”</p>
+<p>​    2、PHP中其实很多代码的书写并不是嵌入到HTML中，而是单独存在，通常书写习惯中就不建议使用标记结束符?&gt;，PHP会自动从开始到最后全部认为是PHP代码，从而解析</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-虚拟主机简介" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a  href="/2021/02/20/%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA%E7%AE%80%E4%BB%8B/" class="article-date">
+      <time datetime="2021-02-20T05:20:15.000Z" itemprop="datePublished">2021-02-20</time>
+</a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a  class="article-title" href="/2021/02/20/%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA%E7%AE%80%E4%BB%8B/">虚拟主机简介</a>
+    </h1>
+  
+
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h2 id="配置虚拟主机"><a href="#配置虚拟主机" class="headerlink" title="配置虚拟主机"></a>配置虚拟主机</h2><p>​    一台服务器很贵，如果只能部署一个网站，那么非常浪费。所以需要通过其他渠道来实现一台主机上部署多个网站。</p>
+<h3 id="什么是虚拟主机"><a href="#什么是虚拟主机" class="headerlink" title="什么是虚拟主机"></a>什么是虚拟主机</h3><p>​    虚拟主机：Virtual machine，并不存在真实的主机，但是可以提供真实主机所实现的功能。</p>
+<p>​    通俗的讲，虚拟主机就是将计算机中不同的文件夹进行不同的命名，然后可以实现让服务器（Apache）根据用户的需求从不同的文件夹（网站）中读取不同的内容。</p>
+<h3 id="虚拟主机的分类"><a href="#虚拟主机的分类" class="headerlink" title="虚拟主机的分类"></a>虚拟主机的分类</h3><p>​    在Apache中，可以将虚拟主机划分成两类：</p>
+<p>​    1、基于IP的虚拟主机：一台电脑上有多个IP，每个IP对应一个网站</p>
+<p>​    原理：电脑默认只有一个IP，因为通常只配有一个网卡；但是有的电脑（服务器居多）可以配置多个网卡，每个网卡可以绑定一个IP地址。</p>
+<p>​    2、基于域名的虚拟主机：一台电脑上只有一个IP，但是IP下可以制作多个网站，但是需要给每个网站不同的名字（虚拟主机名）。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+  
     <article id="post-Web程序的访问流程" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -311,8 +798,7 @@
 <h3 id="静态网站访问"><a href="#静态网站访问" class="headerlink" title="静态网站访问"></a>静态网站访问</h3><img src="/2021/02/18/Web%E7%A8%8B%E5%BA%8F%E7%9A%84%E8%AE%BF%E9%97%AE%E6%B5%81%E7%A8%8B/0.png" alt="静态网站访问" style="zoom:67%;">
 
 <h3 id="动态网站访问"><a href="#动态网站访问" class="headerlink" title="动态网站访问"></a>动态网站访问</h3><p>​    动态网站访问流程与静态差不多，但是会多出几个内容：服务器解析、数据库。</p>
-<p><img src="/2021/02/18/Web%E7%A8%8B%E5%BA%8F%E7%9A%84%E8%AE%BF%E9%97%AE%E6%B5%81%E7%A8%8B/00.png" alt="动态网站访问"></p>
-
+<img src="/2021/02/18/Web%E7%A8%8B%E5%BA%8F%E7%9A%84%E8%AE%BF%E9%97%AE%E6%B5%81%E7%A8%8B/00.png" alt="动态网站访问" style="zoom:67%;">
       
     </div>
     
