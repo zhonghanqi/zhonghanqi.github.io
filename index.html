@@ -277,6 +277,171 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-switch分支语句" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a  href="/2021/03/01/switch%E5%88%86%E6%94%AF%E8%AF%AD%E5%8F%A5/" class="article-date">
+      <time datetime="2021-03-01T10:16:12.000Z" itemprop="datePublished">2021-03-01</time>
+</a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a  class="article-title" href="/2021/03/01/switch%E5%88%86%E6%94%AF%E8%AF%AD%E5%8F%A5/">switch分支语句</a>
+    </h1>
+  
+
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="Switch分支"><a href="#Switch分支" class="headerlink" title="Switch分支"></a>Switch分支</h3><p>​    Switch分支：有一组情形存在，通过同一条件，通常有多个值，但是每一个值都会有对应不同的代码要执行。</p>
+<p>​    Switch判断方式：是将条件放到分支结构内部判断</p>
+<p>​    Switch基本语法：</p>
+<p>  <code>Switch(条件表达式)&#123;</code></p>
+<p>​        <code>//所有条件判断：逐个执行</code></p>
+<p>​        <code>Case 值1:        //当前条件表达式的结果与值1相等(==)</code></p>
+<p>​            <code>要执行的代码段;</code></p>
+<p>​            <code>Break;        //在switch中，如果条件匹配成功，那么系统就不会再次匹配条件，会自动顺序执行向下的所有代码（case代码除外），需要中断执行：break表示中断switch（结束）。</code></p>
+<p>​        <code>Case 值2：</code></p>
+<p>​            <code>要执行的代码段；</code></p>
+<p>​            <code>Break；</code></p>
+<p>​    <code>...</code></p>
+<p>​    <code>//可以使用类似else的语法：都不匹配</code></p>
+<p>​    <code>Default：</code></p>
+<p>​        <code>//匹配失败的代码；</code></p>
+<p>​        <code>Break；</code></p>
+<p>  <code>&#125;</code></p>
+<p>​    if和switch的选择：</p>
+<p>  1、if能做所有的分支结构事情</p>
+<p>  2、switch处理的是条件比较多，同时比较单一，而且是固定值匹配的分支结构</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-if分支介绍" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a  href="/2021/03/01/if%E5%88%86%E6%94%AF%E4%BB%8B%E7%BB%8D/" class="article-date">
+      <time datetime="2021-03-01T09:45:24.000Z" itemprop="datePublished">2021-03-01</time>
+</a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a  class="article-title" href="/2021/03/01/if%E5%88%86%E6%94%AF%E4%BB%8B%E7%BB%8D/">if分支介绍</a>
+    </h1>
+  
+
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="流程控制"><a href="#流程控制" class="headerlink" title="流程控制"></a>流程控制</h3><p>​    流程控制：代码执行的方向</p>
+<h3 id="控制分类"><a href="#控制分类" class="headerlink" title="控制分类"></a>控制分类</h3><p>​    顺序结构：代码从上往下，顺序执行。（代码执行的最基本结构）</p>
+<p>​    分支结构：给定一个条件，同时有多种可执行代码（块），然后会根据条件执行某一段代码</p>
+<p>​    循环结构：在某个条件控制范围内，指定的代码（块）可以重复执行</p>
+<h3 id="顺序结构"><a href="#顺序结构" class="headerlink" title="顺序结构"></a>顺序结构</h3><p>​    顺序结构：最基本结构，所有代码默认都是从上往下依次执行</p>
+<h3 id="分支结构"><a href="#分支结构" class="headerlink" title="分支结构"></a>分支结构</h3><p>​    在PHP中，分支结构主要有两种：if分支和switch分支</p>
+<h3 id="if分支"><a href="#if分支" class="headerlink" title="if分支"></a>if分支</h3><p>​    if：如果的意思，给定一个条件，同时为该条件设置多种（两种）情况，然后通过条件判断来实现具体的执行段</p>
+<p>​    基本语法：if分支PHP也提供多种方式来实现</p>
+<p>​    最简if：只有一段代码，但是可以选择是否执行</p>
+<p>  <code>if(条件表达式)&#123;</code></p>
+<p>​        <code>//满足条件所要执行的内容;//顺序结构</code> </p>
+<p>  <code>&#125;</code></p>
+<p>​    基础if：有两面性，满足条件或不满足条件都有对应的执行代码</p>
+<p>  <code>if(条件表达式)&#123;</code></p>
+<p>​        <code>//满足条件后执行的代码段;</code></p>
+<p>  <code>&#125;else&#123;</code></p>
+<p>​        <code>//不满足条件执行的代码段;</code></p>
+<p>  <code>&#125;</code></p>
+<p>​    复杂if结构：在判断条件之后，通常就有两种结果：满足或不满足，在不满足之后还可以再次进行条件判断</p>
+<p>  <code>if(条件表达式1)&#123;</code></p>
+<p>​        <code>//满足条件表达式1的代码段;</code></p>
+<p>  <code>&#125;elseif(条件表达式2)&#123;</code></p>
+<p>​        <code>//不满足表达式1条件，但是满足表达式2的代码;</code></p>
+<p>  <code>&#125;...  //可以使用多个elseif来进行再次条件筛选</code></p>
+<p>  <code>else&#123;</code></p>
+<p>​        <code>//全部不满足要执行的代码：</code></p>
+<p>  <code>&#125;</code></p>
+<p>​    注意：如果条件特别多才会采用复合if形式</p>
+<p>  1、如果条件比较单一（同一个条件），会采用elseif复合方式</p>
+<p>  2、如果判断条件不一致，建议使用嵌套语法（不宜有太多层嵌套：影响代码美观）</p>
+<p>  if分支适用于所有的条件判断（分支结构）</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+  
     <article id="post-计算机码位运算符运算符优先级" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -843,188 +1008,6 @@
 <p><img src="/2021/02/21/%E5%B8%B8%E9%87%8F%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E4%BD%BF%E7%94%A8/05.png" alt="05"></p>
 <p>​    在PHP中还有一些特殊的常量，他们有双下划线开始+常量名+双下划线结束，这种常量称之为系统魔术常量：魔术常量的值通常会跟着环境变化，但是用户改变不了</p>
 <p><img src="/2021/02/21/%E5%B8%B8%E9%87%8F%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E4%BD%BF%E7%94%A8/06.png" alt="06"></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-变量概念及使用" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a  href="/2021/02/20/%E5%8F%98%E9%87%8F%E6%A6%82%E5%BF%B5%E5%8F%8A%E4%BD%BF%E7%94%A8/" class="article-date">
-      <time datetime="2021-02-20T15:14:44.000Z" itemprop="datePublished">2021-02-20</time>
-</a>
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a  class="article-title" href="/2021/02/20/%E5%8F%98%E9%87%8F%E6%A6%82%E5%BF%B5%E5%8F%8A%E4%BD%BF%E7%94%A8/">变量概念及其使用</a>
-    </h1>
-  
-
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><p>​    PHP是一种动态网站开发的脚本语言，动态语言特点是交互性，会有数据的传递，而PHP作为“中间人”，需要进行数据的传递，传递的前提就是PHP能自己储存数据（临时储存）</p>
-<h3 id="变量基本概念"><a href="#变量基本概念" class="headerlink" title="变量基本概念"></a>变量基本概念</h3><p>​    变量来源于数学，是计算机语言中能<u>储存计算结果</u>或能表示值抽象概念。<u>变量可以通过变量名访问</u>。在指令式语言中，<u>变量通常是可变的</u>。</p>
-<p>​    1、变量是用来储存数据的；</p>
-<p>​    2、变量是存在名字的；</p>
-<p>​    3、变量是通过名字来访问的：数据；</p>
-<p>​    4、变量是可以改变的：数据。</p>
-<h3 id="变量的使用"><a href="#变量的使用" class="headerlink" title="变量的使用"></a>变量的使用</h3><p>​    <strong>PHP中的所有变量都必须使用”$“符号</strong></p>
-<p>​    1、定义：在系统中增加对应的变量名字（内存）</p>
-<p><code>$var1;    //定义变量</code></p>
-<p>​    2、赋值：可以将数据赋值给变量名（可以在定义的同时完成）</p>
-<p><code>$var2=1;    //定义同时赋值</code></p>
-<p>​    3、可以通过变量名访问存储的数据</p>
-<p><code>echo $var2;    //通过var2变量名字找到存储的内容1，然后输出</code></p>
-<p>​    4、可以将变量从内存中删除</p>
-<p><code>unset($var2);    //使用unset(变量名字)函数</code></p>
-<h3 id="变量命名规则"><a href="#变量命名规则" class="headerlink" title="变量命名规则"></a>变量命名规则</h3><p>​    1、在PHP中变量名字必须以”$“符号开始；</p>
-<p>​    2、名字由字母、数字和下划线”_“构成，但是不能以数字开头；</p>
-<p>​    3、在PHP中本身还允许中文变量（不建议）。</p>
-<h3 id="预定义变量"><a href="#预定义变量" class="headerlink" title="预定义变量"></a>预定义变量</h3><p>​    预定义变量：提前定义的变量，系统定义的变量，储存许多需要用到的数据（预定义变量都是数组）</p>
-<p><strong>$_GET</strong>：获取所有表单以get方式提交的数据</p>
-<p><strong>$_POST</strong>：POST提交的数据都会保存在此</p>
-<p><strong>$_REQUEST</strong>：GET和POST提交的都会保存</p>
-<p>$_GLOBALS：PHP中所有的全局变量</p>
-<p><strong>$_SERVER</strong>：服务器信息</p>
-<p><strong>$_SESSION</strong>：session会话数据</p>
-<p><strong>$_COOKIE</strong>：cookie会话数据</p>
-<p>$_ENV：环境信息</p>
-<p>$_FILES：用户上传的文件信息</p>
-<h3 id="可变变量"><a href="#可变变量" class="headerlink" title="可变变量"></a>可变变量</h3><p>​    可变变量：如果一个变量保存的值刚好是另外一个变量的名字，那么可以直接通过访问一个变量得到另外一个变量的值（在变量前面再多加一个$符号）。</p>
-<p><code>$a=&#39;b&#39;;</code></p>
-<p><code>$b=&#39;bb&#39;;</code></p>
-<p><code>$$a➡bb</code></p>
-<h3 id="变量传值"><a href="#变量传值" class="headerlink" title="变量传值"></a>变量传值</h3><p>​    将一个变量赋值给另外一个变量：变量传值</p>
-<p>​    变量传值一共有两种方式：值传递、引用传递</p>
-<p>  值传递：将变量保存的值复制一份，然后将新的值给另外一个变量保存（两个变量没有关系）</p>
-<p><img src="/2021/02/20/%E5%8F%98%E9%87%8F%E6%A6%82%E5%BF%B5%E5%8F%8A%E4%BD%BF%E7%94%A8/01.png" alt="01"></p>
-<p>  引用传递：将变量保存的值所在的内存地址，传递给另外一个变量：两个变量指向同一块内存空间（两个变量是同一个值）</p>
-<p>​    <code>$新变量=&amp;$老变量</code></p>
-<p><img src="/2021/02/20/%E5%8F%98%E9%87%8F%E6%A6%82%E5%BF%B5%E5%8F%8A%E4%BD%BF%E7%94%A8/02.png" alt="02"></p>
-<p>在内存中，通常有以下几个分区</p>
-<p>  栈区：程序可以操作的内存部分（不存数据，运行程序代码），少但是快</p>
-<p>  代码段：储存程序的内存部分（不执行）</p>
-<p>  数据段：储存普通数据（全局区和静态区）</p>
-<p>  堆区：储存复杂数据，大但是效率低</p>
-<h4 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：</h4><p><img src="/2021/02/20/%E5%8F%98%E9%87%8F%E6%A6%82%E5%BF%B5%E5%8F%8A%E4%BD%BF%E7%94%A8/03.png" alt="03"></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-PHP基础" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a  href="/2021/02/20/PHP%E5%9F%BA%E7%A1%80/" class="article-date">
-      <time datetime="2021-02-20T05:34:52.000Z" itemprop="datePublished">2021-02-20</time>
-</a>
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a  class="article-title" href="/2021/02/20/PHP%E5%9F%BA%E7%A1%80/">PHP基础</a>
-    </h1>
-  
-
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h3 id="PHP语法初步"><a href="#PHP语法初步" class="headerlink" title="PHP语法初步"></a>PHP语法初步</h3><p>​    PHP是一种运行在服务器端的脚本语言，可以嵌入到HTML中。</p>
-<h3 id="PHP代码标记"><a href="#PHP代码标记" class="headerlink" title="PHP代码标记"></a>PHP代码标记</h3><p>​    在PHP历史发展中，可以使用多种标记来区分PHP脚本。</p>
-<p>​    ASP标记：&lt;% php 代码 %&gt;</p>
-<p>​    短标记：&lt; ? php 代码 ?&gt;</p>
-<p>​    以上两种基本弃用，如果要使用那么需要在配置文件中开启。</p>
-<p>​    脚本标记：<script language="php">php代码</script></p>
-<p>​    标准标记（常用）：<?php php代码?></p>
-<h3 id="PHP注释"><a href="#PHP注释" class="headerlink" title="PHP注释"></a>PHP注释</h3><p>​    习惯：所有的代码在写的过程中都必须进行注释，对于初学者而言，注释就是个人学习和写代码的一个思路说明。</p>
-<p>​    PHP中注释分为两种：行注释和块注释</p>
-<p>​    行注释：一次注释一行</p>
-<p>​        //:后面跟的所有内容都是注释</p>
-<p>​        #:与//一样</p>
-<p>​    块注释：一次注释多行</p>
-<p>​        /加星号:中间直到*/出现之前，全部都是注释</p>
-<h3 id="PHP语句分隔符"><a href="#PHP语句分隔符" class="headerlink" title="PHP语句分隔符"></a>PHP语句分隔符</h3><p>​    语句分隔符：在PHP中，代码是以行为单位，系统需要通过判断行的结束，该结束通常都是一个符号：分号”;“(英文状态下的分号)。</p>
-<p>​    定义内容：</p>
-<p>​    $a=5;</p>
-<p>​    Echo ‘hello world’;</p>
-<p>​    （Parse error:解析错误；</p>
-<p>​    syntax error:语法错误）</p>
-<p>​    特殊说明：</p>
-<p>​    1、PHP中标记结束符?&gt;有自带语句结束符的效果，最后一行PHP代码可以没有语句结束符“;”</p>
-<p>​    2、PHP中其实很多代码的书写并不是嵌入到HTML中，而是单独存在，通常书写习惯中就不建议使用标记结束符?&gt;，PHP会自动从开始到最后全部认为是PHP代码，从而解析</p>
 
       
     </div>

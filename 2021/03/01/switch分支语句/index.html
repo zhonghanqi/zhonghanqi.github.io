@@ -7,23 +7,19 @@
   
   
   
-  <title>连接错误抑制三目运算符 | Hexo</title>
+  <title>switch分支语句 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="连接运算符​    连接运算：是PHP中将多个字符串拼接的一种符号   . ：将两个字符串连接到一起   .&#x3D; ：复合运算，将左边的内容与右边的内容连接起来，然后重新赋值给左边变量   A.&#x3D;b  &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;  A&#x3D;A.b  错误抑制符  在PHP中有一些错误可以提前预知，但是这些错误可能无法避免，但是又不希望报错给用户看，可以使用错误抑制符处理。   @：在可能出错的表达式前面用@符号即可">
+  <meta name="description" content="Switch分支​    Switch分支：有一组情形存在，通过同一条件，通常有多个值，但是每一个值都会有对应不同的代码要执行。 ​    Switch判断方式：是将条件放到分支结构内部判断 ​    Switch基本语法：   Switch(条件表达式)&amp;#123; ​        &#x2F;&#x2F;所有条件判断：逐个执行 ​        Case 值1:        &#x2F;&#x2F;当前条件表达式的结果与值1相等">
 <meta property="og:type" content="article">
-<meta property="og:title" content="连接错误抑制三目运算符">
-<meta property="og:url" content="http://example.com/2021/02/24/%E8%BF%9E%E6%8E%A5%E9%94%99%E8%AF%AF%E6%8A%91%E5%88%B6%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6/index.html">
+<meta property="og:title" content="switch分支语句">
+<meta property="og:url" content="http://example.com/2021/03/01/switch%E5%88%86%E6%94%AF%E8%AF%AD%E5%8F%A5/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="连接运算符​    连接运算：是PHP中将多个字符串拼接的一种符号   . ：将两个字符串连接到一起   .&#x3D; ：复合运算，将左边的内容与右边的内容连接起来，然后重新赋值给左边变量   A.&#x3D;b  &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;  A&#x3D;A.b  错误抑制符  在PHP中有一些错误可以提前预知，但是这些错误可能无法避免，但是又不希望报错给用户看，可以使用错误抑制符处理。   @：在可能出错的表达式前面用@符号即可">
+<meta property="og:description" content="Switch分支​    Switch分支：有一组情形存在，通过同一条件，通常有多个值，但是每一个值都会有对应不同的代码要执行。 ​    Switch判断方式：是将条件放到分支结构内部判断 ​    Switch基本语法：   Switch(条件表达式)&amp;#123; ​        &#x2F;&#x2F;所有条件判断：逐个执行 ​        Case 值1:        &#x2F;&#x2F;当前条件表达式的结果与值1相等">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/2021/02/24/%E8%BF%9E%E6%8E%A5%E9%94%99%E8%AF%AF%E6%8A%91%E5%88%B6%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6/01.png">
-<meta property="og:image" content="http://example.com/2021/02/24/%E8%BF%9E%E6%8E%A5%E9%94%99%E8%AF%AF%E6%8A%91%E5%88%B6%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6/02.png">
-<meta property="og:image" content="http://example.com/2021/02/24/%E8%BF%9E%E6%8E%A5%E9%94%99%E8%AF%AF%E6%8A%91%E5%88%B6%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6/03.png">
-<meta property="article:published_time" content="2021-02-24T11:51:10.000Z">
-<meta property="article:modified_time" content="2021-02-24T12:09:49.525Z">
+<meta property="article:published_time" content="2021-03-01T10:16:12.000Z">
+<meta property="article:modified_time" content="2021-03-01T12:44:22.266Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2021/02/24/%E8%BF%9E%E6%8E%A5%E9%94%99%E8%AF%AF%E6%8A%91%E5%88%B6%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6/01.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -280,11 +276,11 @@
         </header>
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-连接错误抑制三目运算符" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-switch分支语句" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a  href="/2021/02/24/%E8%BF%9E%E6%8E%A5%E9%94%99%E8%AF%AF%E6%8A%91%E5%88%B6%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6/" class="article-date">
-      <time datetime="2021-02-24T11:51:10.000Z" itemprop="datePublished">2021-02-24</time>
+      <a  href="/2021/03/01/switch%E5%88%86%E6%94%AF%E8%AF%AD%E5%8F%A5/" class="article-date">
+      <time datetime="2021-03-01T10:16:12.000Z" itemprop="datePublished">2021-03-01</time>
 </a>
 
     </div>
@@ -298,7 +294,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      连接错误抑制三目运算符
+      switch分支语句
     </h1>
   
 
@@ -316,23 +312,26 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h3 id="连接运算符"><a href="#连接运算符" class="headerlink" title="连接运算符"></a>连接运算符</h3><p>​    连接运算：是PHP中将多个字符串拼接的一种符号</p>
-<p>  . ：将两个字符串连接到一起</p>
-<p>  .= ：复合运算，将左边的内容与右边的内容连接起来，然后重新赋值给左边变量</p>
-<p>  A.=b  =====  A=A.b</p>
-<p><img src="/2021/02/24/%E8%BF%9E%E6%8E%A5%E9%94%99%E8%AF%AF%E6%8A%91%E5%88%B6%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6/01.png" alt="01"></p>
-<h3 id="错误抑制符"><a href="#错误抑制符" class="headerlink" title="错误抑制符"></a>错误抑制符</h3><p>  在PHP中有一些错误可以提前预知，但是这些错误可能无法避免，但是又不希望报错给用户看，可以使用错误抑制符处理。</p>
-<p>  @：在可能出错的表达式前面用@符号即可</p>
-<p><img src="/2021/02/24/%E8%BF%9E%E6%8E%A5%E9%94%99%E8%AF%AF%E6%8A%91%E5%88%B6%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6/02.png" alt="02"></p>
-<p>  错误抑制符通常在生产环境（上线）会用到，在开发的时候不会用：系统本身最好没有任何错误。</p>
-<h3 id="三目运算"><a href="#三目运算" class="headerlink" title="三目运算"></a>三目运算</h3><p>  三目运算：有三个表达式参与的运算（简单的分支结构缩写）</p>
-<p>语法格式：</p>
-<p>  表达式1？表达式2：表达式3；</p>
-<p>  运算：如果表达式1成立，那么执行表达式2，否则执行表达式3；</p>
-<p>  注意：如果表达式本身比较复杂，建议使用括号包起来。</p>
-<p><img src="/2021/02/24/%E8%BF%9E%E6%8E%A5%E9%94%99%E8%AF%AF%E6%8A%91%E5%88%B6%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6/03.png" alt="03"></p>
-<p>  三目运算可以进行复合三目运算：三目运算中的表达式2和3都可以是另外一个三目运算。</p>
-<p>  表达式1？（表达式2？表达式4：表达式5）：（表达式3？表达式5：表达式6）；</p>
+        <h3 id="Switch分支"><a href="#Switch分支" class="headerlink" title="Switch分支"></a>Switch分支</h3><p>​    Switch分支：有一组情形存在，通过同一条件，通常有多个值，但是每一个值都会有对应不同的代码要执行。</p>
+<p>​    Switch判断方式：是将条件放到分支结构内部判断</p>
+<p>​    Switch基本语法：</p>
+<p>  <code>Switch(条件表达式)&#123;</code></p>
+<p>​        <code>//所有条件判断：逐个执行</code></p>
+<p>​        <code>Case 值1:        //当前条件表达式的结果与值1相等(==)</code></p>
+<p>​            <code>要执行的代码段;</code></p>
+<p>​            <code>Break;        //在switch中，如果条件匹配成功，那么系统就不会再次匹配条件，会自动顺序执行向下的所有代码（case代码除外），需要中断执行：break表示中断switch（结束）。</code></p>
+<p>​        <code>Case 值2：</code></p>
+<p>​            <code>要执行的代码段；</code></p>
+<p>​            <code>Break；</code></p>
+<p>​    <code>...</code></p>
+<p>​    <code>//可以使用类似else的语法：都不匹配</code></p>
+<p>​    <code>Default：</code></p>
+<p>​        <code>//匹配失败的代码；</code></p>
+<p>​        <code>Break；</code></p>
+<p>  <code>&#125;</code></p>
+<p>​    if和switch的选择：</p>
+<p>  1、if能做所有的分支结构事情</p>
+<p>  2、switch处理的是条件比较多，同时比较单一，而且是固定值匹配的分支结构</p>
 
       
     </div>
@@ -341,13 +340,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a  href="/2021/02/24/%E8%BF%9E%E6%8E%A5%E9%94%99%E8%AF%AF%E6%8A%91%E5%88%B6%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6/">连接错误抑制三目运算符</a></p>
+        <p><span>本文标题:</span><a  href="/2021/03/01/switch%E5%88%86%E6%94%AF%E8%AF%AD%E5%8F%A5/">switch分支语句</a></p>
         <p><span>文章作者:</span><a  href="/" title="访问  的个人博客"></a></p>
-        <p><span>发布时间:</span>2021年02月24日 - 19时51分</p>
-        <p><span>最后更新:</span>2021年02月24日 - 20时09分</p>
+        <p><span>发布时间:</span>2021年03月01日 - 18时16分</p>
+        <p><span>最后更新:</span>2021年03月01日 - 20时44分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2021/02/24/%E8%BF%9E%E6%8E%A5%E9%94%99%E8%AF%AF%E6%8A%91%E5%88%B6%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6/" title="连接错误抑制三目运算符">http://example.com/2021/02/24/%E8%BF%9E%E6%8E%A5%E9%94%99%E8%AF%AF%E6%8A%91%E5%88%B6%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://example.com/2021/02/24/%E8%BF%9E%E6%8E%A5%E9%94%99%E8%AF%AF%E6%8A%91%E5%88%B6%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6/　　作者: " title=""></span>
+            <span>原始链接:</span><a class="post-url" href="/2021/03/01/switch%E5%88%86%E6%94%AF%E8%AF%AD%E5%8F%A5/" title="switch分支语句">http://example.com/2021/03/01/switch%E5%88%86%E6%94%AF%E8%AF%AD%E5%8F%A5/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://example.com/2021/03/01/switch%E5%88%86%E6%94%AF%E8%AF%AD%E5%8F%A5/　　作者: " title=""></span>
         </p>
         <p>
             <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
@@ -358,18 +357,9 @@
 
 <nav id="article-nav">
   
-    <a  href="/2021/02/24/%E8%87%AA%E6%93%8D%E4%BD%9C%E8%BF%90%E7%AE%97%E7%AC%A6/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          自操作运算符
-        
-      </div>
-    </a>
   
-  
-    <a  href="/2021/02/24/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">逻辑运算符</div>
+    <a  href="/2021/03/01/if%E5%88%86%E6%94%AF%E4%BB%8B%E7%BB%8D/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">if分支介绍</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -381,7 +371,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.</span> <span class="toc-text">连接运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%94%99%E8%AF%AF%E6%8A%91%E5%88%B6%E7%AC%A6"><span class="toc-number">2.</span> <span class="toc-text">错误抑制符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97"><span class="toc-number">3.</span> <span class="toc-text">三目运算</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Switch%E5%88%86%E6%94%AF"><span class="toc-number">1.</span> <span class="toc-text">Switch分支</span></a></li></ol>
 </div>
 <style>
     .left-col .switch-btn {
@@ -454,13 +444,11 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a  href="/2021/02/24/%E8%87%AA%E6%93%8D%E4%BD%9C%E8%BF%90%E7%AE%97%E7%AC%A6/" title="上一篇: 自操作运算符">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a  href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a  href="/2021/02/24/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6/" title="下一篇: 逻辑运算符">
+            <a  href="/2021/03/01/if%E5%88%86%E6%94%AF%E4%BB%8B%E7%BB%8D/" title="下一篇: if分支介绍">
                 <i class="fa fa-angle-right"></i>
             </a>
         
