@@ -277,6 +277,95 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-常量的定义和使用" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a  href="/2021/02/21/%E5%B8%B8%E9%87%8F%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E4%BD%BF%E7%94%A8/" class="article-date">
+      <time datetime="2021-02-21T12:18:53.000Z" itemprop="datePublished">2021-02-21</time>
+</a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a  class="article-title" href="/2021/02/21/%E5%B8%B8%E9%87%8F%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E4%BD%BF%E7%94%A8/">常量的定义和使用</a>
+    </h1>
+  
+
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h3><p>​    常量与变量一样，都是用来保存数据的。</p>
+<h3 id="常量基本概念"><a href="#常量基本概念" class="headerlink" title="常量基本概念"></a>常量基本概念</h3><p>​    常量：const/constant，是一种在程序运行当中，不可改变的量（数据）</p>
+<p>​    常量一旦定义，通常数据不可改变（用户级别）</p>
+<h3 id="常量定义形式"><a href="#常量定义形式" class="headerlink" title="常量定义形式"></a>常量定义形式</h3><p>​    在PHP中常量有两种定义方式（5.3之后才有两种）</p>
+<p>  1、使用定义常量的函数：define(‘常量名’,常量值);</p>
+<p>  2、5.3之后才有的：const 常量名=值;</p>
+<p><img src="/2021/02/21/%E5%B8%B8%E9%87%8F%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E4%BD%BF%E7%94%A8/01.png" alt="01"></p>
+<p>​    常量名字的命名规则：</p>
+<p>  1、常量不需要”$”符号，一旦使用系统就会认为是变量；</p>
+<p>  2、常量的名字组成由字母、数字和下划线组成，不能以数字开头；</p>
+<p>  3、常量的名字通常是以大小写字母为主（与变量以示区别）；</p>
+<p>  4、常量命名的规则比变量要松散，可以使用一些特殊字符，该方式只能使用define定义；</p>
+<p><img src="/2021/02/21/%E5%B8%B8%E9%87%8F%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E4%BD%BF%E7%94%A8/02.png" alt="02"></p>
+<p>​    注意细节：</p>
+<p>  1、define和const定义的常量是有区别的：在于访问权限区别；</p>
+<p>  2、定义常量通常不区分大小写，但是可以区分，可以参照define函数的第三个参数</p>
+<h3 id="常量使用形式"><a href="#常量使用形式" class="headerlink" title="常量使用形式"></a>常量使用形式</h3><p>​    常量的使用与变量一样：不可改变值（在定义的时候必须赋值）</p>
+<p><img src="/2021/02/21/%E5%B8%B8%E9%87%8F%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E4%BD%BF%E7%94%A8/03.png" alt="03"></p>
+<p>​    有点时候还需要使用另外一种形式来访问（针对的是特殊名字的常量），需要用到另外一个访问常量的函数：const(‘常量名’)</p>
+<p><img src="/2021/02/21/%E5%B8%B8%E9%87%8F%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E4%BD%BF%E7%94%A8/04.png" alt="04"></p>
+<p>​    说明：常量和变量的使用</p>
+<p>  1、凡是数据会可能变化的，那么肯定是用变量；</p>
+<p>  2、数据不一定会边的，可以使用常量或者变量（变量居多）；</p>
+<p>  3、数据不允许被修改的，一定用常量。</p>
+<h3 id="系统常量"><a href="#系统常量" class="headerlink" title="系统常量"></a>系统常量</h3><p>​    系统常量：系统帮助用户定义的常量，用户可以直接使用。</p>
+<p>​    常用的几个系统常量：</p>
+<p>PHP_VERSION:PHP版本号</p>
+<p>PHP_INT_SIZE:整形大小</p>
+<p>PHP_INT_MAX:整形能表示的最大值（PHP中整形是允许出现负数：带符号）</p>
+<p><img src="/2021/02/21/%E5%B8%B8%E9%87%8F%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E4%BD%BF%E7%94%A8/05.png" alt="05"></p>
+<p>​    在PHP中还有一些特殊的常量，他们有双下划线开始+常量名+双下划线结束，这种常量称之为系统魔术常量：魔术常量的值通常会跟着环境变化，但是用户改变不了</p>
+<p><img src="/2021/02/21/%E5%B8%B8%E9%87%8F%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E4%BD%BF%E7%94%A8/06.png" alt="06"></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+  
     <article id="post-变量概念及使用" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
